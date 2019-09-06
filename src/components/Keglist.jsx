@@ -10,6 +10,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Keg from './Keg'
+import NewKegForm from './NewKegForm'
 
 var masterKegList = [
   {
@@ -41,7 +42,7 @@ var masterKegList = [
 function Keglist() {
   return (
     <div className="keg_list_2">
-    
+
       {masterKegList.map((keg, index) =>
         <Keg name={keg.name}
           brand={keg.brand}
