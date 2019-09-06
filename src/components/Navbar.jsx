@@ -6,10 +6,18 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-
     <div>
-    </div>
+      <div className="navbar">
+        <h1> TAP A KEG </h1>
 
+        <Link to="/">HOME</Link>
+        <Link to="/">KEGLIST</Link>
+        <Link to="/">ADD A KEG</Link>
+
+
+
+      </div>
+    </div>
   );
 }
 

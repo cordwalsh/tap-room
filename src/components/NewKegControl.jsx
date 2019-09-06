@@ -11,10 +11,8 @@ import { Link } from 'react-router-dom';
 
 function NewKegControl() {
   return (
-
     <div>
     </div>
-
   );
 }
 
