@@ -2,28 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-class NewKegForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      beer_name: '',
-      beer_brand: '',
-      beer_price: '',
-      beer_abv: '',
-    };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-  }
-
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === 'text' ? target.checked : target.value;
-    const name = target.name;
-
-    this.setState({
-      [name]: value
-    });
-  }
 
 function NewKegForm() {
   return (
