@@ -2,21 +2,25 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import harleyLogo from './../assets/harley_logo.png';
+import addBeerLogo from './../assets/add_beer.png';
 
 function Navbar() {
   return (
     <div>
+    <h1> TAP A KEG </h1>
       <div className="navbar">
-        <h1> TAP A KEG </h1>
+          <ul>
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/">KEGLIST</Link></li>
+            <li><Link to="/">ADD A KEG</Link></li>
+            <li><div className="logo">
+              <img className="container_image" alt="beer logo" src={addBeerLogo} />
+            </div></li>
+      </ul>
 
-        <Link to="/">HOME</Link>
-        <Link to="/">KEGLIST</Link>
-        <Link to="/">ADD A KEG</Link>
 
 
-
-      </div>
+    </div>
     </div>
   );
 }
