@@ -1,5 +1,3 @@
-// page for adding a new keg
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NewKegForm from './NewKegForm';

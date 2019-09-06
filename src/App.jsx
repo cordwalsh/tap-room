@@ -12,8 +12,13 @@ import NewKegForm from './components/NewKegForm';
 
 const App = () => (
   <BrowserRouter>
-    <Navbar />
+    <div>
+      <Navbar />
+    
+    </div>
   </BrowserRouter>
+
+
 );
 
 export default App;

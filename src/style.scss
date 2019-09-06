@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 .navbar {
   position: absolute;
-  top: 1rem;
+  top: 3rem;
   right: 1rem;
   font-family: 'Lora', serif;
 }
@@ -20,8 +21,9 @@
 
  h1 {
   position: absolute;
-  top: 2rem;
   padding-left: 25px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
 }
 
 .container_image {
