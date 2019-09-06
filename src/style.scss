@@ -19,11 +19,12 @@
   color: red;
 }
 
- h1 {
+ .tap {
   position: absolute;
   padding-left: 25px;
   font-family: 'Oswald', sans-serif;
   font-size: 60px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .container_image {
@@ -41,4 +42,40 @@
 body {
   background-color: coral;
   color: white;
+}
+
+.keg_list {
+  padding-top: 10px;
+}
+
+.keg_list_2 {
+  position: absolute;
+  top: 10rem;
+  right: 65rem;
+}
+
+.new_keg_form {
+  position: absolute;
+  top: 15rem;
+  right: 27.5rem;
+}
+
+h2 {
+  position: absolute;
+  top: 9rem;
+  right: 27rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
+input {
+  border-radius: 25px;
+}
+
+.input_button {
+  color: coral;
+  font-size: 18px;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px black;
 }

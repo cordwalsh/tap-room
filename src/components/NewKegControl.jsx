@@ -7,7 +7,7 @@ function NewKegControl() {
   return (
     <div>
       <Navbar />
-      <h2>Add a new keg below</h2>
+      <h2><u>Add a new keg below</u></h2>
       <NewKegForm />
     </div>
   );

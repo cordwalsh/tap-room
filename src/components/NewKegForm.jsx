@@ -10,29 +10,31 @@ function NewKegForm() {
         <form>
           <label>
             Name:
-            <input type="text" name="beer_name" value={this.state.beer_name} onChange={this.handleInputChange} />
+            <input type="text" name="beer_name" />
           </label>
           <br></br>
           <br></br>
           <label>
             Brand:
-            <input type="text" name="beer_brand" value={this.state.beer_brand} onChange={this.handleInputChange} />
+            <input type="text" name="beer_brand" />
           </label>
           <br></br>
           <br></br>
           <label>
             Price:
-            <input type="text" name="beer_price" value={this.state.beer_price} onChange={this.handleInputChange} />
+            <input type="text" name="beer_price" />
           </label>
           <br></br>
           <br></br>
           <label>
             ABV:
-            <input type="text" name="beer_abv" value={this.state.beer_abv} onChange={this.handleInputChange} />
+            <input type="text" name="beer_abv" />
           </label>
           <br></br>
           <br></br>
-          <input type="submit" value="Submit" />
+          <br></br>
+          <br></br>
+            <input className="input_button" type="submit" value="submit" />
         </form>
       </div>
     </div>

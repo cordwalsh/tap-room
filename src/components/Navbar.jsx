@@ -5,7 +5,7 @@ import addBeerLogo from './../assets/add_beer.png';
 function Navbar() {
   return (
     <div>
-    <h1> TAP A KEG </h1>
+    <h1 className="tap"> TAP A KEG </h1>
       <div className="navbar">
           <ul>
             <li><Link to="/">HOME</Link></li>
