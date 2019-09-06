@@ -1,15 +1,10 @@
-// page for adding a new keg
-
-// import the newkegfrom here
-
-//
-
+// header with home, route links
 
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import harleyLogo from './../assets/harley_logo.png';
 
-function NewKegControl() {
+function Navbar() {
   return (
 
     <div>
@@ -18,4 +13,4 @@ function NewKegControl() {
   );
 }
 
-export default NewKegControl;
+export default Navbar;
