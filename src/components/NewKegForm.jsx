@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-class Reservation extends React.Component {
+class NewKegForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isGoing: true,
-      numberOfGuests: 2
+      beer_name: '',
+      beer_brand: '',
+      beer_price: '',
+      beer_abv: '',
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -15,17 +17,13 @@ class Reservation extends React.Component {
 
   handleInputChange(event) {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.type === 'text' ? target.checked : target.value;
     const name = target.name;
 
     this.setState({
       [name]: value
     });
   }
-
-
-
-
 
 function NewKegForm() {
   return (
@@ -34,25 +32,25 @@ function NewKegForm() {
         <form>
           <label>
             Name:
-            <input type="text" name="name" />
+            <input type="text" name="beer_name" value={this.state.beer_name} onChange={this.handleInputChange} />
           </label>
           <br></br>
           <br></br>
           <label>
             Brand:
-            <input type="text" name="brand" />
+            <input type="text" name="beer_brand" value={this.state.beer_brand} onChange={this.handleInputChange} />
           </label>
           <br></br>
           <br></br>
           <label>
             Price:
-            <input type="text" name="price" />
+            <input type="text" name="beer_price" value={this.state.beer_price} onChange={this.handleInputChange} />
           </label>
           <br></br>
           <br></br>
           <label>
             ABV:
-            <input type="text" name="abv" />
+            <input type="text" name="beer_abv" value={this.state.beer_abv} onChange={this.handleInputChange} />
           </label>
           <br></br>
           <br></br>
